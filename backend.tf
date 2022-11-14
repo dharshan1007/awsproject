@@ -4,7 +4,7 @@ terraform {
   backend "s3" {
    bucket         = "pilotinfra"
    key            = "dev/terraform.tfstate"
-   region         = "us-east-1"
+   region         = "ap-southeast-1"
   # profile = "foxconn"
   }
 }
