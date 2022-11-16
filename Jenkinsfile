@@ -13,7 +13,7 @@ pipeline {
                 sh 'terraform validate'
                 sh 'terraform plan'
                 sh 'terraform apply --auto-approve'
-                 sh 'terraform destroy'*/
+                 /*sh 'terraform destroy'*/
               
             }
         }
