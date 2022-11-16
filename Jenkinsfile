@@ -9,11 +9,11 @@ pipeline {
         stage('terraform Init') {
             steps{
                
-                sh 'terraform init -reconfigure'
+                /*sh 'terraform init -reconfigure'
                 sh 'terraform validate'
                 sh 'terraform plan'
-                sh 'terraform apply --auto-approve'
-                 /*sh 'terraform destroy'*/
+                sh 'terraform apply --auto-approve' */
+                sh 'terraform destroy'
               
             }
         }
