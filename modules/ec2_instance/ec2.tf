@@ -4,8 +4,8 @@ data "template_file" "startup" {
 }
 
 resource "aws_instance" "jenkins_master" {
- ami                    = "ami-09d56f8956ab235b3"
- instance_type          = "t2.medium"
+ ami                    = "ami-0af2f764c580cc1f9"
+ instance_type          = "t2.micro"
  subnet_id              = var.default_public_subnet_id
  vpc_security_group_ids = [var.jenkins_sg_id]
  iam_instance_profile = var.dev_iam_instance_profile
