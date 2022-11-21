@@ -1,4 +1,4 @@
-resource "aws_db_subnet_group" "db_sub_gr" {
+/*resource "aws_db_subnet_group" "db_sub_gr" {
   description = "terrafom db subnet group"
   name        = "main_subnet_group"
   subnet_ids      = aws_subnet.eks-private[*].id
@@ -88,6 +88,7 @@ resource "aws_db_instance" "primary_read_replica" {
 
   }
 }
+*/
 
 
 
