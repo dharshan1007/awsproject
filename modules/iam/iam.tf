@@ -24,7 +24,8 @@ assume_role_policy = <<EOF
             "Sid": "sasi",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::076992938490:user/sasi@gmail.com"
+                "AWS": "arn:aws:iam::076992938490:user/dharshanreddy2020@gmail.com
+"
             },
             "Action": "sts:AssumeRole"
         }
