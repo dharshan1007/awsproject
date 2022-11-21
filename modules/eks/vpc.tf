@@ -89,6 +89,7 @@ resource "aws_route_table_association" "internet_access" {
 }
 
 # NAT Elastic IP
+/*
 resource "aws_eip" "main" {
   vpc = true
 
@@ -98,8 +99,10 @@ resource "aws_eip" "main" {
     solution = var.solution
   }
 }
+*/
 
 # NAT Gateway
+/*
 resource "aws_nat_gateway" "main" {
   allocation_id = aws_eip.main.id
   subnet_id     = aws_subnet.eks-public[0].id
@@ -109,7 +112,7 @@ resource "aws_nat_gateway" "main" {
     environemnt = var.environment
     solution = var.solution
   }
-}
+}*/
 
 # Add route to route table
 resource "aws_route" "main" {
@@ -117,6 +120,7 @@ resource "aws_route" "main" {
   nat_gateway_id         = aws_nat_gateway.main.id
   destination_cidr_block = "0.0.0.0/0"
 }
+*/
 
 # Security group for public subnet
 resource "aws_security_group" "eks_public_sg" {
