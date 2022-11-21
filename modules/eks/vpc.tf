@@ -99,10 +99,10 @@ resource "aws_eip" "main" {
     solution = var.solution
   }
 }
-*/
+
 
 # NAT Gateway
-/*
+
 resource "aws_nat_gateway" "main" {
   allocation_id = aws_eip.main.id
   subnet_id     = aws_subnet.eks-public[0].id
@@ -112,7 +112,7 @@ resource "aws_nat_gateway" "main" {
     environemnt = var.environment
     solution = var.solution
   }
-}*/
+}
 
 # Add route to route table
 resource "aws_route" "main" {
