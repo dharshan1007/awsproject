@@ -2,7 +2,7 @@
 terraform {
   required_version = ">=0.12.6"
   backend "s3" {
-   bucket         = "terrabuck1611"
+   bucket         = "terrabuck2111"
    key            = "dev/terraform.tfstate"
    region         = "ap-southeast-1"
    
