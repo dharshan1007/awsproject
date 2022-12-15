@@ -16,7 +16,7 @@ assume_role_policy = <<EOF
             "Sid": "IAM",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::076992938490:user/ekscluster"
+                "AWS": "arn:aws:iam::196117091547:user/ekscluster"
             },
             "Action": "sts:AssumeRole"
         },
@@ -24,7 +24,7 @@ assume_role_policy = <<EOF
             "Sid": "sasi",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::076992938490:user/sasikalasadagopanmay08@gmail.com"
+                "AWS": "arn:aws:iam::196117091547:user/sasikalasadagopanmay08@gmail.com"
            },
             "Action": "sts:AssumeRole"
         }
