@@ -6,9 +6,9 @@ resource "aws_eks_node_group" "ev_pilot_innova" {
   subnet_ids      = aws_subnet.eks-private[*].id
 
   scaling_config {
-    desired_size = 4
-    max_size     = 6
-    min_size     = 4
+    desired_size = 2
+    max_size     = 2
+    min_size     = 2
   }
 
   ami_type       = "AL2_x86_64" # AL2_x86_64, AL2_x86_64_GPU, AL2_ARM_64, CUSTOM
