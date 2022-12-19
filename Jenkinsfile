@@ -6,7 +6,7 @@ pipeline {
     
     stages {
    
-        stage('terraform Init') {
+        stage('terraform apply') {
             steps{
                
                 /*sh 'terraform init'
